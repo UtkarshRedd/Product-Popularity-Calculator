@@ -1,0 +1,8 @@
+cassandra-driver
+pandas
+numpy
+matplotlib
+scikit-learn
+xgboost
+pathlib
+
