@@ -12,7 +12,6 @@ import xgboost as xg
 from sklearn.metrics import mean_squared_error as MSE
 from sklearn.metrics import mean_absolute_error as mae
 from sklearn.model_selection import RepeatedKFold, cross_val_score, KFold, StratifiedKFold
-from sklearn.metrics import mean_absolute_error as mae
 from xgboost import XGBRegressor
 from xgboost import plot_importance
 
@@ -181,60 +180,6 @@ def train_compare_models():
     rf_imp.set_index('features', inplace=True)
     print(rf_imp)
 
-
-    # ### XGBoost ####
-    # xgb_reg = XGBRegressor()
-    # xgb_reg.fit(x_train, y_train)
-    # train_score = xgb_reg.score(x_train, y_train)
-    
-    # print('****************\nFitting and tuning XGBoost')
-    # xgb = XGBRegressor(seed = 123)
-
-    # params = { 
-    #     'max_depth': [3,6,10],
-    #     'learning_rate': [0.01, 0.05, 0.1],
-    #     'n_estimators': [100, 500, 1000],
-    #     'colsample_bytree': [0.3, 0.7]
-    # }
-
-
-    # tuned_xgb = GridSearchCV(estimator=xgb, 
-    #                 param_grid=params,
-    #                 scoring='neg_mean_absolute_error', 
-    #                 verbose=1, cv=10)
-
-
-    # tuned_xgb.fit(x_train, y_train)
-    # #print("Best parameters:", tuned_xgb.best_params_)
-    # print("\nMAE: ", tuned_xgb.best_score_)
-    # xgb_mae = tuned_xgb.best_score_
-
-    # # Predicting the Test set results
-    # y_preds = tuned_xgb.best_estimator_.predict(x_test)
-    # xgb_test_accuracy = mae(y_test, y_preds)
-    
-    # print(f"MAE for XGB on the testing data: {xgb_test_accuracy}")
-
-    # # Plotting xgb feature importance
-    # importances = tuned_xgb.best_estimator_.feature_importances_
-    # indices = np.argsort(importances)
-    # features = tuned_xgb.best_estimator_.feature_names_in_
-
-    # plt.figsize = (6,6)
-    # plt.title('Feature Importances')
-    # plt.barh(range(len(indices)), importances[indices], color='g', align='center')
-    # plt.yticks(range(len(indices)), [features[i] for i in indices])
-    # plt.xlabel('Relative Importance')
-    # plt.savefig(f"{cfg.PLOTS_DIR}/XGB_feature_importance.jpg", bbox_inches='tight')
-
-    # plt.show()
-
-    # importances_xgb = importances.copy()
-    # xgb_imp = pd.DataFrame({'features': tuned_xgb.best_estimator_.feature_names_in_, 'importance': tuned_xgb.best_estimator_.feature_importances_})
-    # xgb_imp
-    # xgb_imp.set_index('features', inplace=True)
-
-    # print(xgb_imp)
     xgb_test_accuracy = 100
 
     if (rf_test_accuracy < xgb_test_accuracy):
