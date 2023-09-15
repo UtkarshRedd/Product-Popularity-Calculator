@@ -12,6 +12,7 @@ Clickstream data was fetched from GCP BigQuery. The following click events were 
 3. Calculate the product popularity based on these weights.
 
 The results of the significance of each click event, as illustrated by the best-performing regressor, are as follows: -
+![Tira pic 2](https://github.com/UtkarshRedd/Product-Popularity-Calculator/assets/29978378/8ef282a6-0e60-407c-ae27-145a258f8c24)
 
 
 ## Modules
