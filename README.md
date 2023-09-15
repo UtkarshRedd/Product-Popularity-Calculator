@@ -7,6 +7,7 @@ The main objective of this project is to design a Machine Learning pipeline that
 
 
 Clickstream data was fetched from GCP BigQuery. The following click events were extracted from this data - Adds to cart, Adds to cart from wishlist, Number of clicks, Number of purchases, and Number of unique purchases. This project performs the following tasks: -
+
 1. Analyzes click events – Number of clicks, Number of Adds to Cart, Number of Adds to Cart from Wishlist, Number of purchases.
 2. Computes the influence/significance of these click events towards a unique product purchase and assigns respective weights to the events, using Regression.
 3. Calculate the product popularity based on these weights.
