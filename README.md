@@ -5,7 +5,6 @@ The main objective of this project is to design a Machine Learning pipeline that
 
 ![TIRA architecture](https://github.com/UtkarshRedd/Product-Popularity-Calculator/assets/29978378/2298a891-8c8c-4d88-9bba-14ae92438a8f)
 
-
 Clickstream data was fetched from GCP BigQuery. The following click events were extracted from this data - Adds to cart, Adds to cart from wishlist, Number of clicks, Number of purchases, and Number of unique purchases. This project performs the following tasks: -
 
 1. Analyzes click events – Number of clicks, Number of Adds to Cart, Number of Adds to Cart from Wishlist, Number of purchases.
@@ -13,7 +12,6 @@ Clickstream data was fetched from GCP BigQuery. The following click events were 
 3. Calculate the product popularity based on these weights.
 
 The results of the significance of each click event, as illustrated by the best-performing regressor, are as follows: -
-![Tira pic 2](https://github.com/UtkarshRedd/Product-Popularity-Calculator/assets/29978378/e786ca22-ceb6-4b40-a609-0d37ab7798a1)
 
 
 ## Modules
