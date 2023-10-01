@@ -15,7 +15,7 @@ The results of the significance of each click event, as illustrated by the best-
 
 ![Tira pic 2](https://github.com/UtkarshRedd/Product-Popularity-Calculator/assets/29978378/8ef282a6-0e60-407c-ae27-145a258f8c24)
 
-From the above barplot, it can be observed that adds_to_cart_from_wishlist has the highest influence on a product purchase, indicating that when a user transfers something from wishlist to cart, there is a high likelihood that they will purchase this product. On the other hand, the number of clicks has the least influence on a product purchase, indicating that a product may have thousands of clicks, but that does not imply the likelihood of a purchase.
+From the above barplot, it can be observed that adds_to_cart_from_wishlist has the highest influence on a product purchase, indicating that when a user transfers something from wishlist to cart, there is a high likelihood that they will purchase this product. On the other hand, the number of clicks has the least influence on a product purchase, indicating that a product may have thousands of clicks, but that does not imply a higher likelihood of a purchase.
 
 ## Modules
 There are a total of three modules in this project: -
