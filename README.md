@@ -1,5 +1,5 @@
 # Product-Popularity-Calculator
-The main objective of this project is to design a Machine Learning pipeline that calculates the popularity of products from clickstream data obtained from the iOS, Android, and Web apps. This project had three main functionalities as shown in the diagram below: -
+The main objective of this project is to design a Machine Learning pipeline that calculates the popularity of products from clickstream data obtained from the iOS, Android, and Web apps of the popular e-retail platform - Tira. This project had three main functionalities as shown in the diagram below: -
 
 ## Project Overview
 
